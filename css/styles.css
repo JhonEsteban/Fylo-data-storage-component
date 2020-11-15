@@ -20,6 +20,74 @@ html {
 }
 
 body {
+  margin: 0;
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
+  background-image: url('../images/bg-mobile.png');
+  background-position: center;
+  background-size: cover;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+figure {
+  margin: 0;
+}
+
+
+.wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.grid-layout {
+  display: grid;
+}
+
+
+
+.top-box {
+  width: 100%;
+  max-width: 350px;
+  height: 190px;
+  margin: 120px auto;
+  padding: 38px;
+  border-radius: 10px 100px 10px 10px;
+  background-color: var(--Dark-Blue);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.top-box__logo {
+  height: 50%;
+}
+
+.top-box__logo figure {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.top-box__icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-self: end;
+  cursor: pointer;
+}
+
+
+.top-box__icons figure {
+  width: 40px;
+  height: 40px;
+  padding: 7px 8px;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 10px;
+  background-color: var(--Very-Dark-Blue);
+  border-radius: 10px;
 }
